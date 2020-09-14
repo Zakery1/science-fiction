@@ -1,13 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ThemeProvider, createTheme } from "arwes";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-
-    </div>
+    <ThemeProvider theme={createTheme()}>
+      <div>My Project</div>
+    </ThemeProvider>
   );
 }
-
-export default App;
